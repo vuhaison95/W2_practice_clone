@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp -r dir3/bar dir3/bar_copy && git add . && git commit -m "main" && git checkout -b branch1 && touch newfile1 && git mv dir1/{dir2/foo,.} && rm -r dir1/dir2 dir3/bar_copy && git add . && git commit -m "branch1" && git checkout -b branch2 && git rm newfile1 && git mv dir3 dir1 && git commit -am "move dir3" && git mv dir1/dir3/{bar,newfile2} && git mv dir1/{foo,foo_modified} && mkdir -p dir1/dir2 && mv dir1/{foo_modified,dir2/} && git add . && git commit -m "newfile2 & foo modified"
